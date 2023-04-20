@@ -16,6 +16,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <img align="center" alt="Js" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
    <img align="center" alt="Js" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" />
    ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+   
   
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/felipedamazio/First-React-App?style=plastic">  
 
