@@ -35,7 +35,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills and Tools</h2>
-              <p>Some of my main skills.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+              <p>Some of my main skills.</p>
               <div className="tools">
                 <div className="item">
                   <img align="center" alt="Felp-Js" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
