@@ -3,7 +3,12 @@
 # Felp's Personal Portfolio 
 ![portifolioFelp](https://user-images.githubusercontent.com/71530559/233258081-d56691ca-2895-4204-9cb0-d9ab57bcf072.png)
 
-### <a align="center" href="https://felps-portifolio.vercel.app/" target="_blank">DEPLOY</a> 
+<h1 align="center">
+ <img alt="GitHub" src="https://img.shields.io/github/last-commit/felipedamazio/felps-portifolio?style=for-the-badge">
+
+ <a align="center" href="https://felps-portifolio.vercel.app/" target="_blank">DEPLOY</a> 
+</h1>
+
 
 ### 🛠 Languages and Tools
 As seguintes ferramentas foram usadas na construção do projeto:
