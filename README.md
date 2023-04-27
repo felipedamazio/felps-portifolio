@@ -19,7 +19,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
    
   
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/felipedamazio/First-React-App?style=plastic">  
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/felipedamazio/felps-portifolio?style=plastic">  
 
 
 # Descrição do Projeto
