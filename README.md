@@ -22,6 +22,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <img  alt="Felp-CSS"  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
  <img  alt="Felp-Sass" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"> 
  <img  alt="Felp-Sass" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
+ <img  alt="Felp-Vercel" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white">  
  <img  alt="Felp-Sass" src="https://aleen42.github.io/badges/src/photoshop.svg"> 
 </div>  
 <br>
