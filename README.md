@@ -5,8 +5,10 @@
 
 <h1 align="center">
  <img alt="GitHub" src="https://img.shields.io/github/last-commit/felipedamazio/felps-portifolio?style=for-the-badge">
+ 
+ [![Deploy with Vercel](https://vercel.com/button)](https://felps-portifolio.vercel.app/)
+ 
 
- <a align="center" href="https://felps-portifolio.vercel.app/" target="_blank">DEPLOY</a> 
 </h1>
 
 
