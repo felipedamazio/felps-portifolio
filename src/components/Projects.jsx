@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Mario.png";
 import projImg2 from "../assets/img/projeto2.png";
-import projImg3 from "../assets/img/ImgClima.png";
+import projImg3 from "../assets/img/image-read-me.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -23,10 +23,10 @@ export const Projects = () => {
       deploy:"https://felipedamazio.github.io/Page-Web-Pay-Resposive/" ,
     },
     {
-      title: "Clima Tempo App",
+      title: "Climate weather",
       description: "Design & Development",
       imgUrl: projImg3,
-      deploy:"https://felipedamazio.github.io/AppClima-Responsivo-/" ,
+      deploy:"https://climate-weather.vercel.app/" ,
     },    
   ];
 
