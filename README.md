@@ -4,7 +4,10 @@
 ![portifolioFelp](https://user-images.githubusercontent.com/71530559/233258081-d56691ca-2895-4204-9cb0-d9ab57bcf072.png)
 
 <h1 align="center">
- <img alt="GitHub" src="https://img.shields.io/github/last-commit/felipedamazio/felps-portifolio?style=for-the-badge">
+ <img alt="GitHub" src="https://img.shields.io/github/last-commit/felipedamazio/felps-portifolio?style=for-the-badge"> 
+ <img alt="GitHub" src="https://img.shields.io/github/deployments/felipedamazio/felps-portifolio/production?style=for-the-badge&logo=vercel"> 
+ <br>
+ <br>
  
  [![Deploy with Vercel](https://vercel.com/button)](https://felps-portifolio.vercel.app/)
  
