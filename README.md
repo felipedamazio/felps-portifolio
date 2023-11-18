@@ -62,7 +62,7 @@ Built using:
 ---
 
 <a href="https://www.linkedin.com/in/felipe-damazio/">
-<img width="200" style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4D03AQFVFuMXM17RQA/profile-displayphoto-shrink_800_800/0/1661115635906?e=1698278400&v=beta&t=5wfi7G8zyoCBIEmGPcjxVfFuRG2c33rRPL6uPnTYBp4"> 
+<img width="200" style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4D03AQFVFuMXM17RQA/profile-displayphoto-shrink_800_800/0/1661115635906?e=1704931200&v=beta&t=W3bIvF5zZeZb9HMziuCqGMJ_HuF2qXDgf-sREV8VIsQ"> 
 </a>
 
 
