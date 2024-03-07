@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import FelpImg from "../assets/img/felpAvatar.png";
+import FelpImg from "../assets/img/FelpAavatarNew.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -75,8 +75,8 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Sophia's Dad | Developer Front End  •
-                    JavaScript • HTML • SCSS 
+                    Sophia's Dad | Developer Front End •
+                    React.Js • Next.Js •  Node.Js • JavaScript • TypeScript
                   </p>
                   <p>
                   Creator ▪︎ Gamer ▪︎ Streamer
