@@ -25,34 +25,10 @@ export const Contact = () => {
     })
   }
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setButtonText("Sending...");
-  //   let response = await fetch("/contact", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json;charset=utf-8",
-  //     },
-  //     body: JSON.stringify(formDetails),
-  //   });
-  //   setButtonText("Send");
-  //   let result = await response.json();
-  //   setFormDetails(formInitialDetails);
-  //   if (result.code == 200) {
-  //     setStatus({ succes: true, message: 'Message sent successfully'});
-  //   } else {
-  //     setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-  //   }
-  // };  
-
-
-
   // função para envio de email com a lib emailjs
   function sendEmail(e) {
     e.preventDefault();
-
     // service id e tamplete id
-
     const tampleteparams = {
       from_name: formDetails.firstName + ' ' + formDetails.lastName,
       message: formDetails.message,
@@ -63,21 +39,18 @@ export const Contact = () => {
     // service key e tamplete key do emailJS
     // .then apartir da promisse se a promisse tiver sucesso entra no . then e executa a função anonima 
     emailjs.send("service_td3prmp", "template_e4bu8ul", tampleteparams, "EC28e_Y3pWDit4HGm")
-      .then((response) => {
-        console.log('EMAIL ENVIADO', response.status, response.text)
-        e.target.reset();
+      .then((response) => {     
         setButtonText("Send");
         if (response.status == 200) {
           setStatus({ succes: true, message: 'Message sent successfully' });
+          console.log('EMAIL ENVIADO', response.status, response.text)
+          e.target.reset();
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
         }
-
-
       }, (error) => {
         console.log("ERRO:", error)
       })
-
   }
 
 
