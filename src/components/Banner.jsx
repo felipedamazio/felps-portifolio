@@ -4,10 +4,11 @@ import FelpImg from "../assets/img/FelpAavatarNew.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
+import { DownloadBtn } from "./DownloadBtn";
+import MyPDF from "../assets/CV/FelipeDamazio(curriculo).pdf";
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -70,7 +71,8 @@ export const Banner = () => {
                   >
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>
-                      {`Hi! I'm Felp..`}<br></br>{" "}
+                      {`Hi! I'm Felp..`}
+                      <br></br>{" "}
                       <span
                         className="txt-rotate"
                         dataPeriod="100"
@@ -79,26 +81,49 @@ export const Banner = () => {
                         <span className="wrap">{text}</span>
                       </span>
                     </h1>
+                    <p>Sophia's Dad | Developer Front End</p>
+                    <p>Content Creator and Games Enthusiast.</p>
                     <p>
-                      Sophia's Dad | Developer Front End
+                      {" "}
+                      • React.Js • Next.Js • Node.Js • JavaScript • TypeScript
                     </p>
-                    <p>
-                      Content Creator and Games Enthusiast.
-                    </p>
-                    <p> •
-                      React.Js • Next.Js • Node.Js • JavaScript • TypeScript
-                    </p>
-                    <div className="tech-skills">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="techs-logo"></img>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" className="techs-logo"></img>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" className="techs-logo"></img>
-                      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" className="techs-logo"></img>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="techs-logo"></img>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="techs-logo"></img>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" className="techs-logo"></img>
+                    <div className="flex">
+                      <div className="tech-skills">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                          className="techs-logo"
+                        ></img>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                          className="techs-logo"
+                        ></img>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                          className="techs-logo"
+                        ></img>
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+                          className="techs-logo"
+                        ></img>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                          className="techs-logo"
+                        ></img>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                          className="techs-logo"
+                        ></img>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                          className="techs-logo"
+                        ></img>
+                      </div>
+                      <div className="btn-download">
+                        <DownloadBtn urlFile={MyPDF} nameFile={'FelipeDamazio(curriculo).pdf'} text={'Download CV'}/>
+                      </div>
                     </div>
-                    <HashLink className="connect-banner-link" to='#connect'>
-                      <button className="connect-banner" >
+                    <HashLink className="connect-banner-link" to="#connect">
+                      <button className="connect-banner">
                         Let’s Connect <ArrowRightCircle size={25} />
                       </button>
                     </HashLink>
