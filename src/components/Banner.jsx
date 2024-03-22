@@ -4,6 +4,10 @@ import FelpImg from "../assets/img/FelpAavatarNew.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -52,57 +56,71 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    {`Hi! I'm Felp -`}{" "}
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="100"
-                      data-rotate='["Developer", "Gamer", "Creator"]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h1>
-                  <p>
-                    Sophia's Dad | Developer Front End •
-                    React.Js • Next.Js •  Node.Js • JavaScript • TypeScript
-                  </p>
-                  <p>
-                  Creator ▪︎ Gamer ▪︎ Streamer
-                  </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={FelpImg} alt="Felp Img" />
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Router>
+      <section className="banner" id="home">
+        <Container>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__fadeIn" : ""
+                    }
+                  >
+                    <span className="tagline">Welcome to my Portfolio</span>
+                    <h1>
+                      {`Hi! I'm Felp -`}{" "}
+                      <span
+                        className="txt-rotate"
+                        dataPeriod="100"
+                        data-rotate='["Developer", "Gamer", "Creator"]'
+                      >
+                        <span className="wrap">{text}</span>
+                      </span>
+                    </h1>
+                    <p>
+                      Sophia's Dad | Developer Front End
+                    </p>
+                    <p>
+                      Content Creator and Games Enthusiast.
+                    </p>
+                    <p> •
+                      React.Js • Next.Js • Node.Js • JavaScript • TypeScript
+                    </p>
+                    <div className="tech-skills">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="techs-logo"></img>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" className="techs-logo"></img>
+                      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"className="techs-logo"></img>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"className="techs-logo"></img>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"className="techs-logo"></img>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"className="techs-logo"></img>
+                    </div>
+                    <HashLink className="connect-banner-link" to='#connect'>
+                      <button className="connect-banner" >
+                        Let’s Connect <ArrowRightCircle size={25} />
+                      </button>
+                    </HashLink>
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__zoomIn" : ""
+                    }
+                  >
+                    <img src={FelpImg} alt="Felp Img" className="felp-img" />
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Router>
   );
 };

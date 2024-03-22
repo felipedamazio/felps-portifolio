@@ -34,36 +34,32 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills and Tools</h2>
-              <p>Some of my main skills.</p>
+              <h2>Skills and Tools</h2>             
               <div className="tools">
-                <div className="item">
-                  <img align="center" alt="Felp-Js" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
-                </div>
-                <div className="item">
+              <div className="item">
                   <img align="center" alt="Felp-React" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 </div>
                 <div className="item">
-                  <img align="center" alt="Felp-HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" />
+                  <img align="center" alt="Felp-Next" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
                 </div>
                 <div className="item">
-                  <img align="center" alt="Felp-CSS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" />
+                  <img align="center" alt="Felp-Js" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
+                </div>                
+                <div className="item">
+                  <img align="center" alt="Felp-Typescript" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                </div>
+                <div className="item">
+                  <img align="center" alt="Felp-Tailwind" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
                 </div>
                 <div className="item">
                   <img align="center" alt="Felp-Sass" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
                 </div>
                 <div className="item">
                   <img align="center" alt="Felp-Git" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                </div>
+                </div>                
                 <div className="item">
-                  <img align="center" alt="Felp-Git" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" />
-                </div>
-                <div className="item">
-                <img align="center" alt="Felp-Photoshop" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg"/>
-                </div>
-                <div className="item">
-                <img align="center" alt="Felp-Premiere" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/premierepro/premierepro-original.svg"/>
-                </div>
+                <img align="center" alt="Felp-Photoshop" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"/>
+                </div>               
               </div>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">

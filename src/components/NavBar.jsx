@@ -49,15 +49,16 @@ export const NavBar = () => {
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
-                <div class="flex-center">
-                  <a href="https://github.com/felipedamazio" target="_blank"><i class="fa fa-github fa-3x icon-3d" ></i></a>
-                  <a href="https://www.linkedin.com/in/felipe-damazio/" target="_blank"><i class="fa fa-linkedin fa-3x icon-3d" ></i></a>
-                  <a href="https://www.instagram.com/felipe.damazio" target="_blank"><i class="fa fa-instagram fa-3x icon-3d" ></i></a>
-                  <a href="https://www.facebook.com/felp.damazio" target="_blank"><i class="fa fa-facebook fa-3x icon-3d" ></i></a>
-                </div>
+            <div className="social-icon">
+              <div class="flex-center">
+                <a href="https://github.com/felipedamazio" target="_blank"><i class="fa fa-github fa-3x icon-3d" ></i></a>
+                <a href="https://www.linkedin.com/in/felipe-damazio/" target="_blank"><i class="fa fa-linkedin fa-3x icon-3d" ></i></a>
+                <a href="https://www.instagram.com/felipe.damazio" target="_blank"><i class="fa fa-instagram fa-3x icon-3d" ></i></a>
+                <a href="https://www.facebook.com/felp.damazio" target="_blank"><i class="fa fa-facebook fa-3x icon-3d" ></i></a>
               </div>
+            </div>
+            <span className="navbar-text">
+
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
