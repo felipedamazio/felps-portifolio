@@ -42,10 +42,10 @@ export const Contact = () => {
     emailjs.send("service_td3prmp", "template_e4bu8ul", tampleteparams, "EC28e_Y3pWDit4HGm")
       .then((response) => {
         setButtonText("Send");
-        setFormDetails(formInitialDetails)
         if (response.status == 200) {
           setStatus({ succes: true, message: 'Message sent successfully' });
           console.log('EMAIL ENVIADO', response.status, response.text)
+          setFormDetails(formInitialDetails)
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
         }

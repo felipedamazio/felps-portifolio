@@ -103,7 +103,10 @@ select:focus {
   }
   nav.navbar .ms-auto {
     margin-left: 0 !important;
-  }  
+  }
+  .banner .flex {
+    flex-direction: column;
+  }
 }
 
 p.success {
@@ -360,6 +363,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
+.banner .flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.banner .btn-download button {
+  margin: 0;
+  font-size: 15px;
+}
+
 .banner .felp-img {
   animation: updown 3s linear infinite;
 }
@@ -374,6 +388,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .tech-skills img {
   width: 2em;
+}
+
+.banner .btn-download a {
+  text-decoration: none;
 }
 
 @keyframes updown {
