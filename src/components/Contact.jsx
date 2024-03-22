@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
@@ -14,6 +14,7 @@ export const Contact = () => {
     phone: '',
     message: ''
   }
+
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
@@ -39,12 +40,12 @@ export const Contact = () => {
     // service key e tamplete key do emailJS
     // .then apartir da promisse se a promisse tiver sucesso entra no . then e executa a função anonima 
     emailjs.send("service_td3prmp", "template_e4bu8ul", tampleteparams, "EC28e_Y3pWDit4HGm")
-      .then((response) => {     
+      .then((response) => {
         setButtonText("Send");
+        setFormDetails(formInitialDetails)
         if (response.status == 200) {
           setStatus({ succes: true, message: 'Message sent successfully' });
           console.log('EMAIL ENVIADO', response.status, response.text)
-          e.target.reset();
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
         }
