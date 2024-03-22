@@ -62,7 +62,7 @@ export const Contact = () => {
     setButtonText("Sending...");     
     // service key e tamplete key do emailJS
     // .then apartir da promisse se a promisse tiver sucesso entra no . then e executa a função anonima 
-    emailjs.send("service_iif69fg", "template_e4bu8ul", tampleteparams, "EC28e_Y3pWDit4HGm")    
+    emailjs.send("service_td3prmp", "template_e4bu8ul", tampleteparams, "EC28e_Y3pWDit4HGm")    
     .then((response)=>{      
       console.log('EMAIL ENVIADO',response.status,response.text) 
       setButtonText("Send");
