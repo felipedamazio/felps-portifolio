@@ -52,9 +52,6 @@ export const Contact = () => {
         console.log("ERRO:", error)
       })
   }
-
-
-
   return (
     <section className="contact" id="connect">
       <Container>
