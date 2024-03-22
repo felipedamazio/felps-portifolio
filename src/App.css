@@ -83,7 +83,7 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
+@media (max-width: 896px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -91,6 +91,19 @@ select:focus {
   nav.navbar a.navbar-brand {
     width: 23%;
   }
+  nav.navbar .social-icon a i {
+    font-size: 2em;
+  }
+
+  nav.navbar .navbar-text {
+    display: none;
+  }
+  nav.navbar .navbar-collapse {
+    gap: 0;
+  }
+  nav.navbar .ms-auto {
+    margin-left: 0 !important;
+  }  
 }
 
 p.success {
@@ -117,9 +130,13 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 
-nav.navbar a.navbar-brand {
+/* nav.navbar a.navbar-brand {
   width: 13%;
+} */
+nav.navbar a.navbar-brand img {
+  width: 3.8em;
 }
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -141,7 +158,6 @@ span.navbar-text {
 
 .social-icon {
   display: inline-block;
-  margin-left: 14px;
 }
 
 .flex-center {
@@ -149,7 +165,6 @@ span.navbar-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 14px;
 }
 
 .flex-center a img {
@@ -279,6 +294,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .navbar-collapse {
   display: flex;
+  gap: 4em;
 }
 
 /************ Banner Css ************/

@@ -88,9 +88,15 @@ export const Banner = () => {
                     <p> •
                       React.Js • Next.Js • Node.Js • JavaScript • TypeScript
                     </p>
+                    
+            
+                  
+          
+          
                     <div className="tech-skills">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="techs-logo"></img>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" className="techs-logo"></img>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" className="techs-logo"></img>
                       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"className="techs-logo"></img>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"className="techs-logo"></img>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"className="techs-logo"></img>

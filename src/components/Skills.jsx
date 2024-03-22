@@ -43,6 +43,9 @@ export const Skills = () => {
                   <img align="center" alt="Felp-Next" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
                 </div>
                 <div className="item">
+                  <img align="center" alt="Felp-Node" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </div>
+                <div className="item">
                   <img align="center" alt="Felp-Js" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
                 </div>                
                 <div className="item">
