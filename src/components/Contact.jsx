@@ -5,6 +5,11 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 // import { Fullscreen } from "react-bootstrap-icons";
 import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+// biblioteca de modals prontos
+const MySwal = withReactContent(Swal)
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -43,11 +48,25 @@ export const Contact = () => {
       .then((response) => {
         setButtonText("Send");
         if (response.status == 200) {
-          setStatus({ succes: true, message: 'Message sent successfully' });
+          // setStatus({ succes: true, message: 'Message sent successfully' });
           console.log('EMAIL ENVIADO', response.status, response.text)
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Email successfully sent !",
+            showConfirmButton: false,
+            timer: 1500
+          });
           setFormDetails(formInitialDetails)
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
+          Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: "Sorry, we had trouble sending your email.",
+            showConfirmButton: false,
+            timer: 1500
+          });
         }
       }, (error) => {
         console.log("ERRO:", error)
@@ -86,13 +105,7 @@ export const Contact = () => {
                       <Col size={12} className="px-1">
                         <textarea rows="6" value={formDetails.message} placeholder="Message" autoComplete="off" required onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                         <button type="submit"><span>{buttonText}</span></button>
-                      </Col>
-                      {
-                        status.message &&
-                        <Col>
-                          <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                        </Col>
-                      }
+                      </Col>                      
                     </Row>
                   </form>
                 </div>}
