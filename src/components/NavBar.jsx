@@ -84,6 +84,12 @@ export const NavBar = () => {
                   <i className="fa fa-linkedin fa-3x icon-3d"></i>
                 </a>
                 <a
+                  href="https://www.youtube.com/channel/UCp-RiLixt2o52--B4aRkUCg"
+                  target="_blank"
+                >
+                  <i className="fa fa-youtube fa-3x icon-3d"></i>
+                </a>
+                <a
                   href="https://www.instagram.com/felipe.damazio"
                   target="_blank"
                 >
