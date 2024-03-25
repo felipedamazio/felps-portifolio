@@ -12,5 +12,5 @@ export const ModalSucessOrError = (position, icon, title, timer) => {
       showConfirmButton: false,
       timer: timer,
     });
-  }, 1000);
+  }, 600);
 };
