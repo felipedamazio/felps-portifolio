@@ -79,7 +79,7 @@ export const Banner = () => {
                         <span className="wrap">{text}</span>
                       </span>
                     </h1>
-                    <p>Sophia's Dad | Developer Front End</p>
+                    <p>Sophia's Dad | Front End Developer</p>
                     <p>Content Creator and Games Enthusiast.</p>
                     <p>
                       {" "}
