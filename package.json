@@ -18,6 +18,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@sweetalert2/theme-borderless": "^5.0.16",
+    "@sweetalert2/theme-dark": "^5.0.16",
+    "@sweetalert2/themes": "^5.0.16",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "emailjs": "^4.0.1",
@@ -33,7 +36,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.10.0",
     "react-router-hash-link": "^2.4.3",
-    "sweetalert2": "^11.10.7"
+    "sweetalert2": "^11.10.7",
+    "sweetalert2-react-content": "^5.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

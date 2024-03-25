@@ -73,24 +73,24 @@ export const NavBar = () => {
               </Nav.Link>
             </Nav>
             <div className="social-icon">
-              <div class="flex-center">
+              <div className="flex-center">
                 <a href="https://github.com/felipedamazio" target="_blank">
-                  <i class="fa fa-github fa-3x icon-3d"></i>
+                  <i className="fa fa-github fa-3x icon-3d"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/felipe-damazio/"
                   target="_blank"
                 >
-                  <i class="fa fa-linkedin fa-3x icon-3d"></i>
+                  <i className="fa fa-linkedin fa-3x icon-3d"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/felipe.damazio"
                   target="_blank"
                 >
-                  <i class="fa fa-instagram fa-3x icon-3d"></i>
+                  <i className="fa fa-instagram fa-3x icon-3d"></i>
                 </a>
                 <a href="https://www.facebook.com/felp.damazio" target="_blank">
-                  <i class="fa fa-facebook fa-3x icon-3d"></i>
+                  <i className="fa fa-facebook fa-3x icon-3d"></i>
                 </a>
               </div>
             </div>

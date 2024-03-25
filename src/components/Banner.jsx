@@ -8,7 +8,7 @@ import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import { DownloadBtn } from "./DownloadBtn";
 import MyPDF from "../assets/CV/FelipeDamazio(curriculo).pdf";
-
+import { ModalSucessOrError } from "./ModalSucessOrError";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -55,7 +55,6 @@ export const Banner = () => {
       setIndex((prevIndex) => prevIndex + 1);
     }
   };
-
   return (
     <Router>
       <section className="banner" id="home">
@@ -75,7 +74,7 @@ export const Banner = () => {
                       <br></br>{" "}
                       <span
                         className="txt-rotate"
-                        dataPeriod="100"
+                        data-period="100"
                         data-rotate='["Developer", "Gamer", "Creator"]'
                       >
                         <span className="wrap">{text}</span>
@@ -119,7 +118,11 @@ export const Banner = () => {
                         ></img>
                       </div>
                       <div className="btn-download">
-                        <DownloadBtn urlFile={MyPDF} nameFile={'FelipeDamazio(curriculo).pdf'} text={'Download CV'}/>
+                        <DownloadBtn
+                          urlFile={MyPDF}
+                          nameFile={"FelipeDamazio(curriculo).pdf"}
+                          text={"Download CV"}
+                        />
                       </div>
                     </div>
                     <HashLink className="connect-banner-link" to="#connect">

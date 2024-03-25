@@ -5,10 +5,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 // import { Fullscreen } from "react-bootstrap-icons";
 import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
-
-// biblioteca de modals prontos
-const mySwal = require(Swal);
+import { ModalSucessOrError } from "./ModalSucessOrError";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -21,7 +18,7 @@ export const Contact = () => {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
+  // const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -41,6 +38,23 @@ export const Contact = () => {
       phone: formDetails.phone,
     };
     setButtonText("Sending...");
+    // modal sucess or error for email sucess or error LIB sweetAlert 2
+    const modalSucess = () => {
+      ModalSucessOrError(
+        "top-end",
+        "success",
+        "Email successfully sent !",
+        3000
+      );
+    };
+    const modalError = () => {
+      ModalSucessOrError(
+        "top-end",
+        "error",
+        "Sorry we had problems sending your email!",
+        3000
+      );
+    };
     // service key e tamplete key do emailJS
     // .then apartir da promisse se a promisse tiver sucesso entra no . then e executa a função anonima
     emailjs
@@ -56,26 +70,20 @@ export const Contact = () => {
           if (response.status == 200) {
             // setStatus({ succes: true, message: 'Message sent successfully' });
             console.log("EMAIL ENVIADO", response.status, response.text);
-            mySwal.fire({
-              position: "top-end",
-              icon: "success",
-              title: "Email successfully sent !",
-              showConfirmButton: false,
-              timer: 1500,
-            });
+            ModalSucessOrError(
+              "center",
+              "success",
+              "Email successfully sent !",
+              3000
+            );
             setFormDetails(formInitialDetails);
           } else {
-            setStatus({
-              succes: false,
-              message: "Something went wrong, please try again later.",
-            });
-            mySwal.fire({
-              position: "top-end",
-              icon: "error",
-              title: "Sorry, we had trouble sending your email.",
-              showConfirmButton: false,
-              timer: 1500,
-            });
+            ModalSucessOrError(
+              "center",
+              "error",
+              "Sorry we had problems sending your email!",
+              3000
+            );
           }
         },
         (error) => {
