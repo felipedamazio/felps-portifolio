@@ -8,7 +8,6 @@ import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import { DownloadBtn } from "./DownloadBtn";
 import MyPDF from "../assets/CV/FelipeDamazio(curriculo).pdf";
-import { ModalSucessOrError } from "./ModalSucessOrError";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
