@@ -9,15 +9,25 @@
  <br>
  <br>
  
- [![Deploy with Vercel](https://vercel.com/button)](https://felps-portifolio.vercel.app/)
- 
+ [![Deploy with Vercel](https://vercel.com/button)](https://felps-portifolio.vercel.app/) 
 
 </h1>
 
+## Project description
+
+This project Create [npm create vite@latest](https://vitejs.dev/guide/) - <img align="center" alt="Js" height="40" width="40" src="https://devicons.railway.app/i/vitejs.svg" />
+
+Built using:
+
+- Front-end library: React
+- CSS framework: React-bootstrap
+- CSS animations library: Animate.css
+- JS framewok: EmailJs
 
 
-### 🛠 Languages and Tools
-As seguintes ferramentas foram usadas na construção do projeto:
+
+## 🛠 Languages and Tools
+The following tools were used to build the project:
 <br>
 
  <div style="display: inline_block">  
@@ -39,22 +49,23 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
 
 
-# Descrição do Projeto
 
-This project Create [npm create vite@latest](https://vitejs.dev/guide/) - <img align="center" alt="Js" height="40" width="40" src="https://devicons.railway.app/i/vitejs.svg" />
+## Getting Started
+```bash
+npm install
+```
+<br>
+First, run the development server:
 
-Built using:
-
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
-- JS framewok: EmailJs
-
-### `npm start`
-
-
-<p > npm install</p>
-<p > npx vite</p>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
 <h1 align="center"></h1>
 
@@ -62,11 +73,10 @@ Built using:
 ---
 
 <a href="https://www.linkedin.com/in/felipe-damazio/">
-<img width="200" style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4D03AQFVFuMXM17RQA/profile-displayphoto-shrink_800_800/0/1661115635906?e=1704931200&v=beta&t=W3bIvF5zZeZb9HMziuCqGMJ_HuF2qXDgf-sREV8VIsQ"> 
-</a>
-
-
-Feito com ❤️ por Felipe Damazio 👋🏽 Entre em contato!
+<img width="200" style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQEGbvDY5m-KrQ/profile-displayphoto-shrink_800_800/0/1710867005445?e=1717027200&v=beta&t=nWqsHp4WncDPxNYsxrRgKn5KmBPKUJRp9Oetw2y8wNo">  
+ </a>
+ 
+Developed by Felp 🚀
 
 [![Linkedin Badge](https://img.shields.io/badge/-Felipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipe-damazio/)](https://www.linkedin.com/in/felipe-damazio/) 
 [![Gmail Badge](https://img.shields.io/badge/-lipjb@hotmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lipjb@hotmail.com)](mailto:lipjb@hotmail.com)
